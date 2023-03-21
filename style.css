@@ -1,6 +1,6 @@
 body{
-	background-image: url("/properties/usa_flag.jpeg");
-	background-color: #517ee16d;
+	background-image: url("properties/usa_flag_background.jpg");
+	/* background-color: #3f69c480; */
 }
 /* The navigation bar */
 #menu {
