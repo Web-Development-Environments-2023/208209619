@@ -1,32 +1,37 @@
-body{
-	background-image: url("properties/usa_flag_background.jpg");
+body {
+	background-image: url("properties/flag_background.jpg");
 	/* background-color: #3f69c480; */
-	}
-	/* The navigation bar */
-	#menu {
+}
+
+/* The navigation bar */
+#menu {
 	overflow: hidden;
 	background-color: #2e56ab;
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
-	  }
-	 
-	  /* Links inside the navbar */
-	  #menu a {
+	position: fixed;
+	/* Set the navbar to fixed position */
+	top: 0;
+	/* Position the navbar at the top of the page */
+	width: 100%;
+	/* Full width */
+}
+
+/* Links inside the navbar */
+#menu a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	  }
-	 
-	  /* Change background on mouse-over */
-	  #menu a:hover {
+}
+
+/* Change background on mouse-over */
+#menu a:hover {
 	background: #ddd;
 	color: black;
-	  }
-	  /* #hr1{
+}
+
+/* #hr1{
 	height: 5px;
 	border:solid;
 	color:#000;
@@ -34,48 +39,49 @@ body{
 	left: 0;
 	right:0;
 	  } */
-	  .aboutwords{
+.aboutwords {
 	padding-left: 100px;
 	padding-right: 100px;
-	  }
-	
-	  /* Main content */
-	.section {
-	margin-top: 100px; /* Add a top margin to avoid content overlay */
+}
+
+/* Main content */
+.section {
+	margin-top: 100px;
+	/* Add a top margin to avoid content overlay */
 	text-align: center;
-	  }
-	
-	 
-	/* photos gallery */
-	  div.gallery {
+}
+
+
+/* photos gallery */
+div.gallery {
 	background-color: white;
 	margin: 5px;
 	border: 1px solid #ccc;
 	float: left;
 	width: 300px;
-	
-	  }
-	 
-	  div.gallery:hover {
+
+}
+
+div.gallery:hover {
 	border: 1px solid #777;
-	  }
-	 
-	  div.gallery img {
+}
+
+div.gallery img {
 	width: 100%;
 	height: auto;
-	  }
-	 
-	  div.desc {
-	
+}
+
+div.desc {
+
 	padding: 15px;
 	text-align: center;
-	  }
-	
-	#web{
-	font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	}
-	
-	#send_button{
+}
+
+#web {
+	font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#send_button {
 	background-color: #111827;
 	border: 1px solid transparent;
 	border-radius: .75rem;
@@ -83,7 +89,7 @@ body{
 	color: #FFFFFF;
 	cursor: pointer;
 	flex: 0 0 auto;
-	font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	font-size: 1.125rem;
 	font-weight: 600;
 	line-height: 1.5rem;
@@ -92,26 +98,26 @@ body{
 	text-decoration: none #6B7280 solid;
 	text-decoration-thickness: auto;
 	transition-duration: .2s;
-	transition-property: background-color,border-color,color,fill,stroke;
+	transition-property: background-color, border-color, color, fill, stroke;
 	transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
 	user-select: none;
 	-webkit-user-select: none;
 	touch-action: manipulation;
 	width: auto;
-	}
-	
-	#send_button:hover {
+}
+
+#send_button:hover {
 	background-color: #374151;
-	}
-	
-	.headline {
+}
+
+.headline {
 	overflow: hidden;
 	text-align: center;
-	}
-	
-	.headline:before,
-	.headline:after {
-	
+}
+
+.headline:before,
+.headline:after {
+
 	background-color: #000;
 	content: "";
 	display: inline-block;
@@ -119,17 +125,14 @@ body{
 	position: relative;
 	vertical-align: middle;
 	width: 50%;
-	}
-	
-	.headline:before {
+}
+
+.headline:before {
 	right: 0.5em;
 	margin-left: -50%;
-	}
-	
-	.headline:after {
+}
+
+.headline:after {
 	left: 0.5em;
 	margin-right: -50%;
-	}
-	
-	 
-	  
+}
