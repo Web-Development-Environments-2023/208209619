@@ -246,46 +246,47 @@
     <br /><br />
     <h1 class="headline">Contact Me</h1>
     <br />
-    <form method="POST" action="mailto:lidor4avital@gmail.com">
-      <p class="form">
-      <p class="contact">
-        <b>Your Mail:</b>
-        <input class="mail-input" name="mail" type="text" size="52">
+    <form>
+      <p>
+        <label for="mail"><b>Your Mail:</b></label>
+        <input name="mail" type="text" size="52">
       </p>
+
+      <p>
+        <label for="subject"><b>Mail Subject:</b></label>
+        <input  type="subject" id="subject" name="subject" size="49">
+      </p>
+
+      <label for="message"><b>Message:</b></label>
       <textarea id="message" name="message" placeholder="Your Message" rows="10" cols="60"></textarea>
       </p>
+
       <b>Add Emoji:</b>
-      <select id="emoji" onchange="addEmoji()">
-        <option value="😁">😁</option>
-        <option value="😀">😀</option>
-        <option value="😂">😂</option>
-        <option value="😄">😄</option>
-        <option value="😇">😇</option>
-        <option value="😈">😈</option>
-        <option value="😉">😉</option>
-        <option value="😋">😋</option>
-        <option value="😍">😍</option>
-        <option value="😎">😎</option>
-        <option value="😘">😘</option>
-        <option value="😕">😕</option>
-        <option value="😠">😠</option>
-        <option value="😧">😧</option>
-        <option value="😭">😭</option>
-        <option value="🤑">🤑</option>
-        <option value="🤩">🤩</option>
-        <option value="💗">💗</option>
-        <option value="💜">💜</option>
-        <option value="💛">💛</option>
-        <option value="💚">💚</option>
-        <option value="💙">💙</option>
-        <option value="💖">💖</option>
-        <option value="🧡">🧡</option>
-        <option value="🦄">🦄</option>
+      <select id="emoji" name="emoji" onchange="addEmoji()">
+        <option value="&#128512;">😀</option>
+        <option value="&#128514;">😂</option>
+        <option value="&#128523;">😋</option>
+        <option value="&#128521;">😉</option>
+        <option value="&#128532;">😔</option>
+        <option value="&#128536;">😘</option>
+        <option value="&#128544;">😠</option>
+        <option value="&#128553;">😩</option>
+        <option value="&#128557;">😭</option>
+        <option value="&#128561;">😱</option>
+        <option value="&#128077;">👍</option>
+        <option value="&#128078;">👎</option>
+        <option value="&#128081;">👑</option>
+        <option value="&#128151;">💗</option>
+        <option value="&#128153;">💙</option>
+        <option value="&#128154;">💚</option>
+        <option value="&#128155;">💛</option>
+        <option value="&#128156;">💜</option>
+        <option value="&#129412;">🦄</option>
+        <option value="&#129419;">🦋</option> 
       </select>
-      <br /> <br />
+      <br/><br/>
 
-
-      <input id="send_button" type="submit" role="button" value="Send">
+      <input id="send_button" type="button" onclick="sendMail()" value="Send">
 
       <br />
       <br /><br />
@@ -293,11 +294,20 @@
       <br /><br />
       <br />
       <script type="text/javascript">
+        function sendMail() {
+          var subject = document.getElementById("subject").value;
+          var message = document.getElementById("message").value;
+          var finalmail = "mailto:lidoravi@post.bgu.ac.il" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
+          window.location.href = finalmail;
+        }
+      </script>
+
+      <script type="text/javascript">
         function addEmoji() {
-          var emo = document.getElementById("emoji");
-          var selected_emo = emo.value;
-          var text = document.getElementById("message");
-          text.value += selected_emo;
+          var emoj = document.getElementById("emoji");
+          var textarea = document.getElementById("message");
+          var emoji = emoj.options[emoj.selectedIndex].innerHTML;
+          textarea.value = textarea.value + emoji;
         }
       </script>
     </form>
@@ -305,6 +315,8 @@
   </section>
   <br />
   <br />
+
+
 
 
   <script type="text/javascript">
